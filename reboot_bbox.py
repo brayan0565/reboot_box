@@ -5,7 +5,7 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # --- CONFIGURATION ---
-PASSWORD = "you password"  # Ton mot de passe d'admin Bbox
+PASSWORD = "Brezzo13@13"  # Ton mot de passe d'admin Bbox
 # ---------------------
 
 def reboot_bbox():
@@ -15,7 +15,7 @@ def reboot_bbox():
     # 1. Connexion / Authentification
     login_url = "https://mabbox.bytel.fr/api/v1/login"
     print("⏳ Connexion à la Bbox...")
-    res_login = session.post(login_url, data={'password': PASSWORD})
+    res_login = session.post(login_url, data={'Brezzo13@13': PASSWORD})
     
     if res_login.status_code != 200:
         print(f"❌ Échec de la connexion (Code HTTP: {res_login.status_code})")
